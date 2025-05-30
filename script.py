@@ -17,8 +17,8 @@ your_account2,your_password2,start_time2,end_time2,your_preferroom,your_prefersi
 # 账号密码字典
 
 account_password4 = {
-    "241526151113": "000000",
-    "3578657968": "000000"
+    "4032430182": "lhy123456",
+    "4032430182": "lhy123456"
 }
 
 
@@ -181,7 +181,7 @@ def choose_it(driver, sit_avilable, idx, reading_room, day_type, max_attempts=5)
     返回:
     bool: 预约是否成功
     """
-    dir_time = {3: [['08:00', '14:00'], ['14:00', '20:00']], 2: [['14:00', '18:00'], ['18:00', '22:00']]}
+    dir_time = {3: [['13:00', '19:00'], ['19:00', '22:00']], 2: [['14:00', '18:00'], ['18:00', '22:00']]}
     start_time = dir_time[day_type][idx][0]
     end_time = dir_time[day_type][idx][1]
 
@@ -771,7 +771,7 @@ import shutil
 def main():
     """主函数：循环登录多个账号并执行操作"""
     sit_avilable, day_type = None, None
-    users = {"自定义": [account_password4, "三楼理科书库", "104"]}
+    users = {"自定义": [account_password4, "三楼智慧研修空间", "16"]}
     user = "自定义"
     total_accounts = list(users[user][0].items())
     reading_room = users[user][1]
