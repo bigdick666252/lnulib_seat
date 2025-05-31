@@ -771,7 +771,7 @@ import shutil
 def main():
     """主函数：循环登录多个账号并执行操作"""
     sit_avilable, day_type = None, None
-    users = {"自定义": [account_password4, "三楼智慧研修空间", "16"]}
+    users = {"自定义": [account_password4, "三楼智慧研修空间", "30"]}
     user = "自定义"
     total_accounts = list(users[user][0].items())
     reading_room = users[user][1]
